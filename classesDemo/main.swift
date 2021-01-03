@@ -5,7 +5,12 @@
 //  Created by Simon Roberts on 1/1/21.
 //
 
-import Foundation
+let skeleton = Enemy(health: 100, attackStrength: 1)
 
-print("Hello, World!")
+let dragon = Dragon(health: 500, attackStrength: 25)
+
+dragon.wingSpan = 5
+dragon.move()
+dragon.attack()
+dragon.talk(speech: "RAAARW")
 
